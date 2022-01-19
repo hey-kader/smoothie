@@ -2,6 +2,7 @@
 #include "slib.c"
 
 int main () {
+
   system("clear");
 
   if (!has_hole ()) {
@@ -15,7 +16,6 @@ int main () {
   do {
     printf("press enter...\n");
   } while ((c = getc(stdin) != '\n'));
-
   printf("--> :|");
   do {
     if (c == '\n')
@@ -23,4 +23,5 @@ int main () {
   } while ((c = getc(stdin)) != EOF);
 
   return 0;
+
 }
