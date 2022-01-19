@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "hlib.h"
+#include "slib.c"
 
 int main () {
   system("clear");
