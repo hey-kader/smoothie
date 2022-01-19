@@ -3,6 +3,8 @@
 int main () {
 
   system("clear");
+  //int d = broadcast_setup("192.168.1.152");
+  //printf("%d", d);
 
   if (!has_hole ()) {
     printf("making hole...\n");
@@ -15,7 +17,9 @@ int main () {
   do {
     printf("press enter...\n");
   } while ((c = getc(stdin) != '\n'));
+
   printf("--> :|");
+
   do {
     if (c == '\n')
       printf("--> :|");

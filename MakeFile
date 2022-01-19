@@ -3,9 +3,7 @@ make: main.o
 	clang -lm main.o -o main
 slib.o: slib.c
 	clang -c slib.c -o slib.o
-main.o: main.c slib.o broadcast.o
+main.o: main.c slib.o
 	clang -c main.c -o main.o
-broadcast.o: broadcast.c
-	clang -c broadcast.c -o broadcast.o
 clean:
 	rm -f *.o main
