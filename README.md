@@ -1,6 +1,6 @@
 # smoothie chat
 
-## ```hlib.h is our smoothie lib```
+## ```slib.h is our smoothie lib```
 
 ## ```main.c contains our prompt```
 
