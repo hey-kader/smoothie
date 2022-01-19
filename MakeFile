@@ -1,12 +1,11 @@
 # -*- MakeFile -*-
-
-all: main
-
-output: main.c slib.c
-	gcc -lm main.o slib.o -o output
-main.o: main.c
-	gcc -c main.c
+make: main.o
+	clang -lm main.o -o main
+slib.o: slib.c
+	clang -c slib.c -o slib.o
+main.o: main.c slib.o broadcast.o
+	clang -c main.c -o main.o
 broadcast.o: broadcast.c
-	gcc -c broadcast.c
+	clang -c broadcast.c -o broadcast.o
 clean:
-	rm *.o output
+	rm -f *.o main
